@@ -20,6 +20,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   color: #0f172a;
+  -webkit-text-stroke: 0.3px currentColor; 
+  text-shadow: 0 0 0.2px rgba(15, 23, 42, 0.2);
 }
 
 .navbar {
