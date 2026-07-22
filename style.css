@@ -28,14 +28,13 @@
 }
 
 body {
-  font-family: 'HWFS', 'FangSong', '华文仿宋', -apple-system, sans-serif;
+  font-family: 'HarmonyOS-Sans', -apple-system, sans-serif;
   background-color: #f7f7f7;
   line-height: 1.7;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   color: #0f172a;
-  -webkit-text-stroke: 0.3px currentColor; 
   text-shadow: 0 0 0.2px rgba(15, 23, 42, 0.2);
 }
 
