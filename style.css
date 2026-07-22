@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'FZFS';
-  src: url('fonts/fzfs.woff2') format('woff2');
+  font-family: 'HWFS';
+  src: url('fonts/hwfs.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'FZFS', 'FangSong', '方正仿宋', "STFangSong", -apple-system, sans-serif;
+  font-family: 'HWFS', 'FangSong', '华文仿宋', -apple-system, sans-serif;
   background-color: #f7f7f7;
   line-height: 1.7;
   display: flex;
