@@ -5,7 +5,7 @@ class MyNavbar extends HTMLElement {
         <div class="navbar-logo">
           <a href="/">MBLC7的个人站</a>
         </div>
-        <ul class="navbar-link">
+        <ul class="navbar-links">
           <li><a href="/" id="navbar-home">首页</a></li>
           <li><a href="python" id="navbar-python">Python</a></li>
         </ul>
