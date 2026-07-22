@@ -16,7 +16,7 @@ class MyNavbar extends HTMLElement {
 
   highlightCurrentPage() {
     const path = window.location.pathname;
-    const page = page.split("/").pop() || "index.html";
+    const page = path.split("/").pop() || "index.html";
 
     if (page === "index.html" || page === "") {
       this.querySelector("#navbar-home")?.classList.add("active");
