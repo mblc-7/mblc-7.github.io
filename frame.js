@@ -42,3 +42,13 @@ class MyFooter extends HTMLElement {
   }
 }
 customElements.define('my-footer', MyFooter);
+
+class MySpoiler extends HTMLElement {
+  connectedCallback() {
+    const spoilerText = this.getAttribut('text');
+    this.innerHTML = `
+      <span class="spoiler">${spoilerText}</span>
+    `
+  }
+}
+customElements.define('my-spoiler', MySpoiler)
