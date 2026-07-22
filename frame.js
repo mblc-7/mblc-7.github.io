@@ -48,7 +48,7 @@ class MySpoiler extends HTMLElement {
     const innerText = this.innerHTML;
     if (innerText.trim()) {
       this.innerHTML = `
-        <span class="spoiler">${spoilerText}</span>
+        <span class="spoiler">${innerText}</span>
       `
     }
   }
