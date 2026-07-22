@@ -24,6 +24,24 @@ body {
   text-shadow: 0 0 0.2px rgba(15, 23, 42, 0.2);
 }
 
+.spoiler {
+  background-color: #000;
+  border-radius: 5px;
+  cursor: help;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  -webkit-text-stroke: 0.3px currentColor;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.spoiler:hover {
+  color: #f0f0f0;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
