@@ -56,3 +56,17 @@ class MySpoiler extends HTMLElement {
   }
 }
 customElements.define('my-spoiler', MySpoiler)
+
+class MyCodetext extends HTMLElement {
+  connectedCallback() {
+    const innerText = this.innerHTML.replaceAll("\n", "<br>");
+    if (innerText.trim()) {
+      const shadow = this.attachShadow({ mode: 'open' });
+      shadow.innerHTML = `
+        <style>@import url('style.css');</style>
+        <p class="codetext">${innerText}</p>
+      `
+    }
+  }
+}
+customElements.define('my-codetext', MyCodetext)
