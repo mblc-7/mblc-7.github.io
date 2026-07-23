@@ -42,31 +42,3 @@ class MyFooter extends HTMLElement {
   }
 }
 customElements.define('my-footer', MyFooter);
-
-class MySpoiler extends HTMLElement {
-  connectedCallback() {
-    const innerText = this.innerHTML;
-    if (innerText.trim()) {
-      const shadow = this.attachShadow({ mode: 'open' });
-      shadow.innerHTML = `
-        <style>@import url('style.css');</style>
-        <span class="spoiler">${innerText}</span>
-      `
-    }
-  }
-}
-customElements.define('my-spoiler', MySpoiler)
-
-class MyCodetext extends HTMLElement {
-  connectedCallback() {
-    const innerText = this.innerHTML.replaceAll("\n", "<br>");
-    if (innerText.trim()) {
-      const shadow = this.attachShadow({ mode: 'open' });
-      shadow.innerHTML = `
-        <style>@import url('style.css');</style>
-        <p class="codetext">${innerText}</p>
-      `
-    }
-  }
-}
-customElements.define('my-codetext', MyCodetext)
