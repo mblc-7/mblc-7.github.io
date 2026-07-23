@@ -32,7 +32,7 @@ class MyFooter extends HTMLElement {
     this.innerHTML = `
       <footer class="site-footer">
         <div class="footer-content">
-          <p>版权所有 &copy; MBLC7 2026。保留所有权利。/p>
+          <p>版权所有 &copy; MBLC7 2026。保留所有权利。</p>
           <div class="footer-links">
             <a href="https://github.com/mblc-7" target="_blank">GitHub</a>
           </div>
