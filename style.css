@@ -39,7 +39,7 @@ body {
 }
 
 .spoiler {
-  background-color: #000;
+  background-color: #0f172a;
   border-radius: 5px;
   cursor: help;
   transition: color 0.3s ease, background-color 0.3s ease;
