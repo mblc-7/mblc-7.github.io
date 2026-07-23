@@ -143,6 +143,18 @@ main {
   letter-spacing: 1.5px;
 }
 
+.content-container a {
+  color: #008080;
+  text-decoration: none;
+  border-bottom: 1px dashed #008080;
+  transition: color 0.2s;
+}
+
+.content-container a:hover {
+  color: #005a5a;
+  border-bottom-style: solid;
+}
+
 .site-footer {
   background-color: #1e293b;
   color: #94a3b8;
