@@ -47,7 +47,9 @@ class MySpoiler extends HTMLElement {
   connectedCallback() {
     const innerText = this.innerHTML;
     if (innerText.trim()) {
-      this.innerHTML = `
+      const shadow = this.attachShadow({ mode: 'open' });
+      shadow.innerHTML = `
+        <style>@import url('style.css');</style>
         <span class="spoiler">${innerText}</span>
       `
     }
