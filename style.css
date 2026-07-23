@@ -21,6 +21,30 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'JetBrains-Mono';
+  src: url('fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains-Mono';
+  src: url('fonts/JetBrainsMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains-Mono';
+  src: url('fonts/JetBrainsMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +60,12 @@ body {
   min-height: 100vh;
   color: #0f172a;
   text-shadow: 0 0 0.2px rgba(15, 23, 42, 0.2);
+}
+
+.codetext {
+  font-family: 'JetBrains-Mono', 'Consolas', -apple-system, sans-serif;
+  background-color: #dcdfe5;
+  border-radius: 5px;
 }
 
 .spoiler {
